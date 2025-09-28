@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
 :root {
     --pink: #d67183;
     --bg: #0a0a0a;
@@ -135,6 +139,34 @@ body::-webkit-scrollbar {
 }
 
 .surah>img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.annur {
+    width: 18rem;
+    height: 18rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.annur>img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.gal {
+    width: 18rem;
+    height: 18rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.gal>img {
     display: inline;
     margin: 0 auto;
     height: auto;
@@ -284,6 +316,21 @@ body::-webkit-scrollbar {
     z-index: 1055 !important;
 }
 
+.loading-page {
+    position: fixed;
+    inset: 0 !important;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/img/bg.png");
+    background-size: cover;
+    background-position: center;
+ z-index: 1056 !important;
+}
+
+.card-body {
+    overflow-wrap: break-word !important;
+}
+
 
 
 .timeline {
@@ -299,7 +346,7 @@ position: relative;
     bottom: 0;
     position: absolute;
     width: 1px;
-    background-color: #ccc;
+    background-color: #ffffff;
     left: 50%;
 }
 
@@ -322,11 +369,9 @@ position: relative;
 .timeline li .timeline-image{
     width: 160px;
     height: 160px;
-    background-color: #ccc;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 50%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -335,10 +380,13 @@ position: relative;
 .timeline li .timeline-panel{
     width: 40%;
     float: left;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     padding: 2rem;
     position: relative;
     border-radius: 8px;
+    background-image: url("assets/img/bg21.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .timeline li .timeline-panel::before{
@@ -346,8 +394,8 @@ position: relative;
     display: inline-block;
     position:absolute;
     border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
-    border-right: 0 solid #ccc;
+    border-left: 15px solid #ffffff;
+    border-right: 0 solid #ffffff;
     border-bottom: 15px solid transparent;
     top:80px;
     right: -15px;
@@ -360,8 +408,8 @@ position: relative;
     display: inline-block;
 
     border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right: 0 solid #fff;
+    border-left: 14px solid #ffffff;
+    border-right: 0 solid #ffffff;
     border-bottom: 14px solid transparent;
     top:81px;
     right: -13px;
@@ -387,7 +435,13 @@ position: relative;
     right: auto;
 }
 
-
+footer {
+    background-color: #d67183;
+    background-size: cover;
+    background-position: center;
+    margin-top: -0.5rem;
+    padding-bottom: 5rem;
+}
 
 
 
