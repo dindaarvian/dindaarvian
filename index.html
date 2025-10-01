@@ -34,7 +34,7 @@
     <meta name="color-scheme" content="dark">
     <link rel="canonical" href="https://dindaarvian.github.io/dindaarvian/">
     <link rel="shortcut icon" type="image/x-icon" href="https://dindaarvian.github.io/dindaarvian/assets/img/3.png">
-    <link rel="icon" type="image/x-icon" href="https://ldindaarvian.github.io/dindaarvian/assets/img/3.png">
+    <link rel="icon" type="image/x-icon" href="https://dindaarvian.github.io/dindaarvian/assets/img/3.png">
 
 <!-- Preconnect and preload CDN -->
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
@@ -136,7 +136,7 @@
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js" integrity="sha256-XG5M9shcLLpu8ct5bVbu6lLVzLpfZChl+csxdyLVP18=" crossorigin="anonymous"></script>
 
 <!--Navbar Bottom-->
-    <div class="fixed-bottom d-flex justify-content-center" style="bottom: 25px;">
+    <!-- <div class="fixed-bottom d-flex justify-content-center" style="bottom: 25px;">
         <div class="d-flex justify-content-around p-2 rounded-4" style="width: 90%; max-width: 400px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); background-color: #f7f7f7;">
             <a class="nav-link text-white text-center py-2 px-3 rounded-3" href="#home" style="background-color: #d67183;">
                 <i class="fa-solid fa-house"></i>
@@ -154,6 +154,27 @@
                 <i class="fa-solid fa-comment"></i>
             </a>
             
+        </div>
+    </div> -->
+
+    <!-- Navbar Bottom -->
+    <div class="fixed-bottom d-flex justify-content-center hidden" style="bottom: 25px;" id="navbar-bottom">
+        <div class="d-flex justify-content-around p-2 rounded-4" style="width: 90%; max-width: 400px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); background-color: #f7f7f7;">
+            <a class="nav-link text-white text-center py-2 px-3 rounded-3" href="#home" style="background-color: #d67183;">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a class="nav-link text-white text-center py-2 px-3 rounded-3" href="#mempelai" style="background-color: #d67183;">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+            <a class="nav-link text-white text-center py-2 px-3 rounded-3" href="#acara" style="background-color: #d67183;">
+                <i class="fa-solid fa-calendar"></i>
+            </a>
+            <a class="nav-link text-white text-center py-2 px-3 rounded-3" href="#gallery" style="background-color: #d67183;">
+                <i class="fa-solid fa-images"></i>
+            </a>
+            <a class="nav-link text-white text-center py-2 px-3 rounded-3" href="#ucapan" style="background-color: #d67183;">
+                <i class="fa-solid fa-comment"></i>
+            </a>
         </div>
     </div>
 
@@ -189,7 +210,8 @@
        <!-- Mempelai -->
         <section class="bg-mempelai" id="mempelai">
           <h2 style="font-size: 0.7rem; margin-top:0.5rem ;">
-          Dengan nama Allah Yang Maha Pengasih dan Maha Penyayang, kami dengan rendah hati mengundang Bapak/Ibu/Saudara/i untuk berbagi dalam momen kebahagiaan saat kami bersatu dalam ikatan pernikahan.
+          Dengan nama Allah Yang Maha Pengasih dan Maha Penyayang,
+          <br>kami dengan rendah hati mengundang Bapak/Ibu/Saudara/i untuk berbagi dalam momen kebahagiaan saat kami bersatu dalam ikatan pernikahan.</br>
           </h2>
           <br></br>
           <div class="overflow-x-hidden">
@@ -226,20 +248,23 @@
  <!-- Acara -->
         <br>
         </br>
-        <section class="font-acara" id="acara">
-            <div class="container">
+        <section class="m-0 p-0" id="acara">
+           <div class="container">
+                <div class="card-body border rounded-4 shadow p-3">
                 <div class="text-center">
                   <h3 style="font-size: 2rem;">Waktu Menuju Acara :</h3>
+                    <div></div>
                     <div class="simply-countdown"></div>   
                 <br>
                 <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" style="background-color: #d67183;" target="_blank"  href="https://www.google.com/calendar/render?action=TEMPLATE&text=Dinda&Arvian's+Wedding&dates=20240114T090000/20240114T1400&details=Details+about+the+event&location=-6.986976904774476,107.58829192175185&sf=true&output=xml">
                     <i class="fa-solid fa-calendar-check me-2"></i>Save The Date
                 </a>
-                <br>
-                </br>
+              </section>
+              <section>
+                <br></br>
             <h2 style="font-size: 0.7rem; margin-top:0.5rem ;">Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala,
             <br>insyaAllah kami akan menyelenggarakan acara : </br></h2>
-        
+            
             <div class="overflow-x-hidden">
             <div class="akad mb-2 x-auto">
             <img src="./assets/img/akad.gif" alt="akad">
@@ -269,7 +294,7 @@
                     <br>Semoga Allah SWT berkahi langkah kami dalam menciptakan keluarga yang penuh kasih sayang, dan keberkahan sebagaimana firman-Nya :
               </br></h2>
               <div class="annur mb-2 mx-auto">
-                <img src="./assets/img/annur.gif" alt="annur">
+                <img src="./assets/img/annur.png" alt="annur">
                 </div>
 
             </div>
@@ -292,12 +317,15 @@
                 <div class="timeline-image" style="background-image:url(assets/img/first.png);"></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                      <h3 style="font-size: 1.7rem; text-align: left;">Pertemuan</h3>
+                      <h3 style="font-size: 1.7rem; text-align: left;">📖 Pertemuan</h3>
                       <h4 style="font-size: 1rem; text-align: left; margin-top:0.5rem ; color: #595556;">Mei 2021</h4>
                   </div>
                   <div class="timeline-body">
-                    <p style="color:#d67183; font-size: 0.7rem; text-align: justify;">Kami dipertemukan di salah satu lembaga amil zakat yang ada di kota bandung pada bulan suci ramadhan. Pada saat itu kami sedang berkegiatan menjadi volunteer.</p>
-                  </div>
+                    <p style="color:#d67183; font-size: 0.7rem; text-align: justify;">
+                      Takdir mempertemukan kami pada bulan suci Ramadhan tahun 2021, di salah satu lembaga amil zakat di Kota Bandung.
+                      Saat itu, kami hanyalah dua orang asing, yang sedang berkegiatan sebagai volunteer yang sibuk dengan peran masing-masing.
+                      Tanpa disangka, dari sebuah pertemuan sederhana itulah cerita indah ini dimulai.
+                    </div>
                 </div>
                 
               </li>
@@ -305,37 +333,46 @@
                 <div class="timeline-image" style="background-image:url(assets/img/realation.png);"></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                      <h3 style="font-size: 1.7rem; text-align: left;">Komitmen</h3>
-                     <h4 style="font-size: 1rem; text-align: left; margin-top:0.5rem ; color: #595556;">16 Agustus 2021</h4>
+                      <h3 style="font-size: 1.7rem; text-align: left;">💌 Berkomitmen</h3>
+                     <h4 style="font-size: 1rem; text-align: left; margin-top:0.5rem ; color: #595556;">Agustus 2021</h4>
                   </div>
                   <div class="timeline-body">
-                    <p  style="color:#d67183; font-size: 0.7rem; text-align: justify;">Kami mulai berkomitmen untuk menjalin hubungan bersama pada tgl 16 Agustus 2021.
-                      Kami menjalani komitmen bersama ini selama 4th yang tentu saja banyak ujian dan cobaannya. Dan kami selalu yakin bisa melewati segala ujian itu bersama-sama.</p>
-                  </div>
+                    <p  style="color:#d67183; font-size: 0.7rem; text-align: justify;">
+                      Waktu pun membawa kami semakin dekat. Hingga akhirnya, pada bulan Agustus 2021.
+                      Kami berkomitmen untuk saling menjaga hati dan melangkah bersama dalam sebuah hubungan yang penuh doa dan harapan.
+                    </div>
                 </div>
               </li>
               <li>
                 <div class="timeline-image" style="background-image:url(assets/img/lamaran.png);"></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                      <h3 style="font-size: 1.7rem;text-align: left;">Lamaran</h3>
+                      <h3 style="font-size: 1.7rem;text-align: left;">💍 Lamaran</h3>
                       <h4 style="font-size: 1rem;text-align: left;margin-top:0.5rem ; color: #595556;">29 Desember 2024</h4>
                   </div>
                   <div class="timeline-body">
-                    <p  style="color:#d67183; font-size: 0.7rem; text-align: justify;">Setelah menjalani hubungan selama 4th atas kehendak-Nya menuntun kami pada sebuah ikatan yang tidak disangka,tepat di tgl 29 Desember 2024 kami memutuskan untuk membawa hubungan ini ke jenjang yang lebih serius yaitu melangsungkan acara lamaran yang disaksikan oleh kedua keluarga.</p>
-                  </div>
+                    <p  style="color:#d67183; font-size: 0.7rem; text-align: justify;">
+                      Tahun-tahun berjalan membawa kami pada titik yang lebih indah.
+                      Tanggal 29 Desember 2024 menjadi saksi ketika dua keluarga duduk bersama, mengikat janji dalam sebuah lamaran.
+                      Saat itu, cinta kami tak lagi hanya tentang dua hati, melainkan tentang menyatukan dua keluarga dalam ridho Allah.
+                    </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image" style="background-image:url(assets/img/nikah.png);"></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                      <h3 style="font-size: 1.7rem;text-align: left;">Menikah</h3>
+                      <h3 style="font-size: 1.7rem;text-align: left;">❤️ Menikah</h3>
                       <h4 style="font-size: 1rem; text-align: left;margin-top:0.5rem ; color: #595556;">07 Desember 2025</h4>
                      </div>
                   <div class="timeline-body">
-                    <p style="color:#d67183; font-size: 0.7rem; text-align: justify;">Percayalah, bukan karna bertemu lalu berjodoh tapi karna berjodoh lah maka kami dipertemukan, kami memutuskan untuk mengikrarkan janji suci pernikahan kami di bulan ini. InsyaAllah sebagai mana yang pernah dikatakan oleh saydina Ali bin Abi Thalib "Apa yang menjadi takdirmu akan menemukan jalannya untuk menemukanmu"</p>
-                  </div>
+                    <p style="color:#d67183; font-size: 0.7rem; text-align: justify;">
+                      Dan kini, tibalah saat yang kami nantikan.
+                      Pada 7 Desember 2025, dengan segala kerendahan hati, kami akan mengucap janji suci pernikahan.
+                      Kami percaya, perjalanan ini bukan sekedar kebetulan, melainkan takdir terbaik yang Allah tuliskan sejak awal.
+                      Semoga cinta yang lahir dari pertemuan sederhana ini tumbuh selamanya, menjadi ladang doa, kebahagiaan,
+                      dan keberkahan hingga akhir hayat dan Allah SWT meridhoi setiap langkah kami menuju kehidupan baru yang penuh berkah. Aamiin  
+                    </div>
                 </div>
               </li>
             </ul>
@@ -350,7 +387,7 @@
            <div class="container">
                 <div class="card-body border rounded-4 shadow p-3">
                 
-                <h4 style="font-size: 2rem;">Album Foto</h4>  
+                <h5 style="font-size: 2rem;">Album Foto</h5>  
                   <div class="satu mb-2 mx-auto">
                     <img src="./assets/img/album/14.jpg" alt="satu" onclick="util.modal(this)">
                   </div>
@@ -536,6 +573,36 @@
     document.querySelector('#nama').value=namafix;
   </script>
 
+<script>
+    // Definisikan objek util
+    const util = {
+        buka: function (element) {
+            // Sembunyikan loading page dengan transisi
+            loading.style.opacity = '0';
+            // Tampilkan navbar
+            document.getElementById('navbar-bottom').classList.remove('hidden');
+            // Aktifkan scroll pada body
+            document.body.style.overflowY = 'auto';
+            // Inisialisasi AOS (jika diperlukan)
+            if (typeof AOS !== 'undefined') {
+                AOS.init();
+            }
+        },
+        // Placeholder untuk fungsi lain agar tidak error
+        music: function (element) {
+            console.log("Fungsi music dipanggil");
+            // Tambahkan logika music dari app.js jika ada
+        },
+        modal: function (element) {
+            console.log("Fungsi modal dipanggil");
+            // Tambahkan logika modal dari app.js jika ada
+        },
+        duar: function (element) {
+            console.log("Fungsi duar dipanggil");
+            // Tambahkan logika duar dari app.js jika ada
+        }
+    };
+</script>
 
 
 </body>  
