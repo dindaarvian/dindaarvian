@@ -172,8 +172,10 @@ const util = (() => {
             document.getElementById('alertDiv').style.display = 'none';
         }
 
-        opacity('welcome');
-        document.getElementById('tombol-musik').style.opacity = 100;
+        ///opacity('welcome');
+        document.getElementById('tombol-musik').style.display = 'block';
+        document.getElementById('navbar_baru').style.display = 'block';
+        
         timer();
 
         await confetti({
