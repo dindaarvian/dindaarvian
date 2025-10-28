@@ -175,6 +175,19 @@ const util = (() => {
         ///opacity('welcome');
         document.getElementById('tombol-musik').style.display = 'block';
         document.getElementById('navbar_baru').style.display = 'block';
+
+        // Panggil fungsi fetch ucapan dari WishesModule yang baru
+        if (typeof WishesModule !== 'undefined') { // Cek modul ada
+             await WishesModule.fetchWishes(); // <--- BARIS KRUSIAL
+        }
+
+        await confetti({
+            origin: { y: 0.8 },
+            zIndex: 1057
+        });
+        await session.check();
+        await animation();
+    
         
         timer();
 
