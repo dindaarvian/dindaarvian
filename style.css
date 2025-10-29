@@ -346,10 +346,10 @@ body::-webkit-scrollbar {
 }
 
 .timeline li .timeline-image {
-    width: clamp(120px, 30vw, 160px);
-    height: clamp(120px, 30vw, 160px);
+    width: clamp(90px, 30vw, 120px);
+    height: clamp(90px, 30vw, 120px);
     position: absolute;
-    left: 50%;
+    left: -60%;
     transform: translateX(-50%);
     background-size: cover;
     background-position: center;
