@@ -364,7 +364,7 @@ body::-webkit-scrollbar {
     padding: 1.5rem;
     position: relative;
     border-radius: 1rem;
-    background-image: url(assets/img/cb.jpg);
+    background-image: url(assets/img/bg.png);
 }
 
 .timeline li .timeline-panel::before {
