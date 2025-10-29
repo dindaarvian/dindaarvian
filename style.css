@@ -214,6 +214,8 @@ body::-webkit-scrollbar {
     background-image: url(assets/img/bunga.gif);
     background-position: center;
     background-attachment: fixed;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     inset: 0 !important;
 }
