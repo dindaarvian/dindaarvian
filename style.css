@@ -218,8 +218,6 @@ body::-webkit-scrollbar {
     height: 100%;
     z-index: -1;
     min-height: 100vh;
-    display: flex !important;
-    visibility: visible !important;
     inset: 0 !important;
 }
 
