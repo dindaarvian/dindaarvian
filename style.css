@@ -162,7 +162,7 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
-.bca, .bsi, .gift {
+.bca, .bsi, .bni .gift {
     width: min(100%, 18rem);
     height: auto;
     position: relative;
@@ -172,11 +172,11 @@ body::-webkit-scrollbar {
     transition: transform 0.3s ease;
 }
 
-.bca:hover, .bsi:hover, .gift:hover {
+.bca:hover, .bsi:hover, .bni:hover, .gift:hover {
     transform: scale(1.05);
 }
 
-.bca>img, .bsi>img, .gift>img {
+.bca>img, .bsi>img, .bni>img, .gift>img {
     display: block;
     margin: 0 auto;
     height: 100%;
