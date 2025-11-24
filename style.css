@@ -29,17 +29,26 @@ body::-webkit-scrollbar {
     display: none !important;
 }
 
+/* style.css (Sekitar baris 37) */
 .hero::before {
     content: '';
     position: fixed;
     inset: 0 !important;
     width: 100%;
     height: 100%;
-    background-image: url(assets/img/bg.png);
+    /* [UBAH] Default background lo sekarang adalah bgfix.gif */
+    background-image: url(assets/img/bgfix.gif); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     z-index: -1;
+    
+    /* [TAMBAH] Transisi untuk membuat ganti gambar jadi smooth */
+    transition: background-image 1s ease-in-out; 
+}
+
+.hero.bg-changed::before {
+    background-image: url(assets/img/bg.png); /* Background target setelah dibuka */
 }
 
 .hero {
@@ -211,7 +220,7 @@ body::-webkit-scrollbar {
 .cover {
     content: '';
     background-size: cover;
-    background-image: url(assets/img/bunga.gif);
+//    background-image: url(assets/img/bg.png);
     background-position: center;
     background-attachment: fixed;
     width: 100%;
