@@ -126,8 +126,8 @@ body::-webkit-scrollbar {
 
 /* Image Containers - Responsive */
 .img-crop {
-    width: clamp(5rem, 15vw, 8rem);
-    height: clamp(5rem, 15vw, 8rem);
+    width: clamp(8rem, 15vw, 8rem);
+    height: clamp(8rem, 15vw, 8rem);
     position: relative;
     overflow: hidden;
 }
